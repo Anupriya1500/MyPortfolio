@@ -1,0 +1,97 @@
+*{
+	margin: 0 ;
+	padding: 0;
+	box-sizing:border-box ;
+}
+.navbar{
+	background-color: rgba(0 , 0, 0, 0.5);
+	height: 50px;
+	display:flex ;
+	justify-content: center;
+	padding-top: 10px;
+	position: sticky;
+	top: 0;
+}
+
+.navbar ul{
+	/*background-color: yellowgreen;*/
+	display: flex;
+	list-style: none;
+
+	height: 30px;
+	padding-top: 2px;
+
+}
+.navbar ul li{
+	font-family: century;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.navbar ul li a{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding:10px 25px;
+}
+.navbar ul li a:hover{
+	background-color: white ;
+	color: black;
+	box-shadow: 0 0 10px white;
+}
+
+/* Home Section */
+#home{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 840px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+#home::before{
+	content: "";
+	position: absolute;	
+	background: url('indiagate.jpg') no-repeat center center/cover;
+	top: 0;
+	right: 0;
+	height: 900px;
+	width: 100%;
+	z-index: -1;
+	opacity: .8;
+	
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	/*border: 1px solid whitesmoke;*/
+	align-items: center;
+	position: absolute;
+	top: 30%;
+	right: 10%;
+}
+.headings{
+	font-family: century;
+	font-size: 3rem;
+	text align-items: center;
+	margin: 40px 0px;
+}
+
+.btn{
+	padding: 10px 35px;
+	background-color: transparent;
+	border: 1px solid whitesmoke;
+	color: white;
+}	
+.btn:hover{
+	cursor: pointer;
+	background-color: black;
+	color: ghostwhite;
+	box-shadow: 0 0 5px black;
+	font-weight: bold;
+}
+
+/*	*/
