@@ -6,6 +6,7 @@
 
 html{
 	scroll-behavior: smooth;
+	min-height: 100%;
 }
 
 .navbar{
@@ -29,8 +30,9 @@ html{
 }
 .navbar ul li{
 	font-family: century;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: bold;
+	margin-right: 20px;
 }
 
 .navbar ul li a{
@@ -51,6 +53,7 @@ html{
 	flex-direction: column;
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 840px;
+	width: 100%;
 	justify-content: center;
 	align-items: center;
 	color: white;
@@ -59,9 +62,11 @@ html{
 #home::before{
 	content: "";
 	position: absolute;	
+	padding-top: 1200px;
 	background: url('Mypic.jpg') no-repeat center/cover;
 	top: 0;
-	height: 250%;
+	right: 0;
+	height: 500px;
 	width: 100%;
 	z-index: -1;
 	opacity: .8;
@@ -74,8 +79,9 @@ html{
 	/*border: 1px solid whitesmoke;*/
 	align-items: center;
 	position: absolute;
-	top: 30%;
-	right: 10%;
+	top: 20%;
+	right: 1%;
+
 }
 .headings{
 	font-family: century;
@@ -141,6 +147,8 @@ html{
 	color: white;
 	align-items: center;
 	padding: 20px;
+		flex-wrap: wrap;
+	box-sizing: border-box;
 }
 .gallery{
 	display: flex;
@@ -152,6 +160,9 @@ html{
 	width: 30%;
 	height: 300px;
 	margin: 10px;
+}
+.gallery img:hover{
+	cursor: pointer;
 }
 
 /* Services Section */
@@ -171,10 +182,9 @@ html{
 .row{
 	display: flex;
 	justify-content: space-around;
-	/*
 	flex-wrap: wrap;
 	box-sizing: border-box;
-*/
+
 }
 .box{
 	display: flex;
@@ -190,6 +200,10 @@ html{
 	background: linear-gradient(to top,rgb(255,45,45) 50%, darkgreen 50%);
 	background-size: 100% 500%;
 	transition: all .8s;
+}
+.box img{
+	background-color: white;
+	padding: 10px;
 }
 .box:hover{
 	background-position: left bottom;
@@ -213,12 +227,15 @@ html{
 	color: white;
 }
 
+#contact .headings{
+	text-align: center;
+}
 .form{
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
 	align-items: center;
-	margin: 20px 0px;
+	margin: 10px 0px;
 }
 .input{
 	padding: 12px;
@@ -238,7 +255,7 @@ html{
 
 #send{
 	padding: 10px;
-	margin: 40px;
+	margin: 20px;
 	width: 10%;
 	border: none;
 	outline: none;
@@ -248,3 +265,4 @@ html{
 	cursor: pointer;
 	box-shadow: 0 0 10px white;
 }
+
