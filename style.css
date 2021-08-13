@@ -3,6 +3,11 @@
 	padding: 0;
 	box-sizing:border-box ;
 }
+
+html{
+	scroll-behavior: smooth;
+}
+
 .navbar{
 	background-color: rgba(0 , 0, 0, 0.5);
 	height: 50px;
@@ -54,10 +59,9 @@
 #home::before{
 	content: "";
 	position: absolute;	
-	background: url('indiagate.jpg') no-repeat center center/cover;
+	background: url('Mypic.jpg') no-repeat center/cover;
 	top: 0;
-	right: 0;
-	height: 900px;
+	height: 250%;
 	width: 100%;
 	z-index: -1;
 	opacity: .8;
@@ -94,4 +98,153 @@
 	font-weight: bold;
 }
 
-/*	*/
+/*About Section*/
+
+#about{
+	display: flex;
+	flex-direction: column;
+	background-color: dimgrey;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#about h1{
+	text-align: center;
+	color: white;
+}
+#pic{
+	display: flex;
+}
+#pic img{
+	width: 575px;
+	height: 400px ;
+}
+
+#intro{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 10px;
+}
+#intro h2{
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+/* Portfolio Section*/
+
+#portfolio{
+	display: flex;
+	flex-direction: column;
+	background-color: dimgrey;
+	color: white;
+	align-items: center;
+	padding: 20px;
+}
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+.gallery img{
+	width: 30%;
+	height: 300px;
+	margin: 10px;
+}
+
+/* Services Section */
+
+#services{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: black;
+	padding: 20px;
+	margin-top: 20px;
+}
+#services .headings{
+	color: white;
+	text-align: center;
+}
+.row{
+	display: flex;
+	justify-content: space-around;
+	/*
+	flex-wrap: wrap;
+	box-sizing: border-box;
+*/
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 450px;
+	border: 1px black;
+	margin: 10px;
+	align-items: center;
+	padding: 10px;
+	text-align: justify;
+	border-radius: 15px;
+	background: linear-gradient(to top,rgb(255,45,45) 50%, darkgreen 50%);
+	background-size: 100% 500%;
+	transition: all .8s;
+}
+.box:hover{
+	background-position: left bottom;
+	color: white;
+	border: none;
+	box-shadow: 0 0 20px rgb(255,45,45);
+	cursor: pointer;
+}
+.box img{
+	width: 80px;
+	height: 80px;
+}
+
+/*Contact Section*/
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	margin: 20px 0px;
+}
+.input{
+	padding: 12px;
+	margin: 15px;
+	border: none;
+	outline: none;
+	width: 30%;
+}
+
+#msg{
+	width: 20%;
+	padding: 10px;
+	margin: 15px;
+	border: none;
+	outline: none;
+}
+
+#send{
+	padding: 10px;
+	margin: 40px;
+	width: 10%;
+	border: none;
+	outline: none;
+}
+
+#send:hover{
+	cursor: pointer;
+	box-shadow: 0 0 10px white;
+}
